@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 test("form submission displays result", async ({ page }) => {
-  await page.goto("http://localhost:5173");
+  await page.goto("http://localhost:5174");
 
   // המתנה שהאלמנטים של הטופס ייטענו
   await page.waitForSelector('input[placeholder="Enter Url"]', {
