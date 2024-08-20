@@ -12,7 +12,7 @@ interface Metadata {
 export const fetchUrls = async (data: UrlSchema): Promise<Metadata[]> => {
   try {
     const response = await axios.post<Metadata[]>(
-      `http://localhost:3000/url`,
+      `${import.meta.env.VITE_URL_BACKEND}/url`,
       data
     );
     return response.data;
